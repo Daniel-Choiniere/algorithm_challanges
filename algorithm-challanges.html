@@ -63,3 +63,13 @@ function repeatStringNumTimes(str, num) {
 
 // soultion not using repeat() method
 
+function repeatStringNumTimes(str, num) {
+  var repeatedStr = "";
+  while (num > 0) {
+   repeatedStr = repeatedStr + str;
+   num = num - 1;
+  }
+  return repeatedStr;
+}
+
+repeatStringNumTimes("abc", 3);
