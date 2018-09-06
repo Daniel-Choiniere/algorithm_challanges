@@ -1,7 +1,7 @@
-// PROBLEM 1
+// PROBLEM 1 Basic Algorithm Scripting: Convert Celsius to Fahrenheit
 
 function convertToF(celsius) {
-  let fahrenheit=(((9/5) * celsius) + 32);
+  let fahrenheit = ((9/5) * celsius + 32);
   return fahrenheit;
 }
 
@@ -9,7 +9,7 @@ convertToF(30);
 
 
 
-// PROBLEM 2
+// PROBLEM 2 Basic Algorithm Scripting: Reverse a String
 
 function reverseString(str) {
   var splitString = str.split('');
@@ -22,5 +22,44 @@ reverseString("hello");
 
 
 
-// PROBLEM 3
+// PROBLEM 3 Basic Algorithm Scripting: Factorialize a Number
+
+function factorialize(num) {
+  if (num === 0) {
+    return 1;
+  }
+  return num * factorialize(num-1);
+  }
+
+factorialize(10);
+
+
+
+// PROBLEM 4 Basic Algorithm Scripting: Slice and Splice
+
+function frankenSplice(arr1, arr2, n) {
+    var arr2Copy = arr2.slice();
+
+    for (var i = 0; i < arr1.length; i++) {
+        arr2Copy.splice(n+i, 0, arr1[i]);
+    }
+    return arr2Copy;
+}
+
+frankenSplice([1, 2, 3], [4, 5, 6], 1);
+
+
+
+// PROBLEM 5 Basic Algorithm Scripting: Repeat a String Repeat a String
+
+// First solution i came up with, but using built in repeat() method
+
+function repeatStringNumTimes(str, num) {
+  if (num < 0) {
+    return "";
+  }
+  return (str.repeat(num));
+}
+
+// soultion not using repeat() method
 
