@@ -34,7 +34,7 @@ function factorialize(num) {
 factorialize(10);
 
 
-
+    //****************************************
 // PROBLEM 4 Basic Algorithm Scripting: Slice and Splice
 
 function frankenSplice(arr1, arr2, n) {
@@ -73,3 +73,48 @@ function repeatStringNumTimes(str, num) {
 }
 
 repeatStringNumTimes("abc", 3);
+
+
+// Basic Algorithm Scripting: BooWho
+
+function booWho(bool) {
+  if (typeof bool === 'boolean') {
+    return true;
+  }
+  return false;
+}
+
+booWho(null);
+
+
+
+
+// Basic Algorithm Scripting: Falsy Bouncer
+
+function bouncer(arr) {
+  return arr.filter(Boolean);
+}
+
+bouncer([7, "ate", "", false, 9]);
+
+
+
+// Basic Algorithm Scripting: Finders Keepers
+
+function findElement(arr, func) {
+  let num = 0;
+
+  for (var i=0; i<arr.length; i++) {
+    num = arr[i];
+    if (func(num)) {
+      return num;
+    }
+  }
+  return undefined;
+}
+
+
+
+
+findElement([1, 2, 3, 4], num => num % 2 === 0);
+
