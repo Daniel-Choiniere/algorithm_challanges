@@ -2,7 +2,7 @@
 
 function convertToF(celsius) {
   let fahrenheit = ((9/5) * celsius + 32);
-  return fahrenheit;
+  return fahrenheit;';'
 }
 
 convertToF(30);
@@ -66,8 +66,8 @@ function repeatStringNumTimes(str, num) {
 function repeatStringNumTimes(str, num) {
   var repeatedStr = "";
   while (num > 0) {
-   repeatedStr = repeatedStr + str;
-   num = num - 1;
+   repeatedStr+=str;
+   num-=1;
   }
   return repeatedStr;
 }
