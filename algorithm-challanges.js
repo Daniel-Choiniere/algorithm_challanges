@@ -33,6 +33,19 @@ function factorialize(num) {
 
 factorialize(10);
 
+// Alternate Solution
+
+function factorialize(num) {
+  var cloud = 1;
+
+  for (var i=2; i<=num; i++) {
+    cloud *= i;
+  }
+  return cloud;
+}
+
+factorialize(1);
+
 
     //****************************************
 // PROBLEM 4 Basic Algorithm Scripting: Slice and Splice
